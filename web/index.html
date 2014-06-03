@@ -26,17 +26,21 @@
 
 	<!-- Favicons
 	================================================== -->
-	<link rel="shortcut icon" href="images/icon.jpg">
-	<link rel="apple-touch-icon" href="images/icon.jpg">
-	<link rel="apple-touch-icon" sizes="72x72" href="images/icon.jpg">
-	<link rel="apple-touch-icon" sizes="114x114" href="images/icon.jpg">
+	<link rel="shortcut icon" href="images/icon.png">
+	<link rel="apple-touch-icon" href="images/icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/icon.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/icon.png">
 
 </head>
 <body>
     
     <video autoplay loop poster="videobg.jpg" id="bgvid">
-<source src="landscape_muted.mp4" type="video/mp4">
-</video>
+        <source src="landscape_muted.mp4" type='video/mp4; codecs="H.264, AAC"'>
+        <source src="videos/example.webm" type='video/webm; codecs="vp8, vorbis"'>
+        <source src="videos/example.webm" type='video/ogg; codecs="theora, vorbis"'>
+                <p> Sorry your browser doesn't support the video file.</p>
+                <p> <a href="videos/example.mp4"> You can download the file here! </a></p>
+    </video>
         <div id="home">
             
         </div>
@@ -44,17 +48,14 @@
             <ul>
                 <div class="logo">
                     <a href="index.html">
-                        <img src="images/icon.svg" height="100" width="100" alt="logo">
+                        <img src="images/icon.svg" height="100%" width="100%" alt="logo">
                     </a>
                 </div>
                 <li id="homelink">
                     <a href="index.html" title="Home Page">HOME</a>
                 </li>
                 <li id="videolink">
-                    <a href="videos.html" title="Watch The Pundit here">WATCH ONLINE</a>
-                </li>
-                <li id="audiolink">
-                    <a href="audio.html" title="Listen to Barry on the radio">AUDIO</a>
+                    <a href="videos.html" title="Watch The Pundit here">WATCH/LISTEN ONLINE</a>
                 </li>
                 <li id="picslink">
                     <a href="pics.html" title="The Gallery">IMAGES</a>
