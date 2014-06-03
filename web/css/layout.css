@@ -80,8 +80,8 @@ Navigation
     line-height: 18vh;
 }
 #navigation ul li {
-    display: inline;
-    width: 100%;
+    display: inline-block;
+    width: 10%;
     margin: 0;
     border: 0;
 }
@@ -92,51 +92,40 @@ Navigation
     color: #000;
     text-decoration: none;
     padding: 0 3% 0 3%;
-    margin-top: 2vw;
     border: 0;
+    display: block;    
+    -webkit-transition: background-color 0.4s linear;
+    -moz-transition: background-color 0.4s linear;
+    -o-transition: background-color 0.4s linear;
+    -ms-transition: background-color 0.4s linear;
+    transition: background-color 0.4s linear;
+}
+#navigation ul #homelink a {
+    background-color: #000;
+    color: #FFF;
+}
+#navigation ul #homelink a:hover {
+    background-color: #c75c00; 
 }
 #navigation ul li a:hover {
-    color: #c75c00;
+    color: #FFFFFF;
+    background-color: #c75c00;
     margin: 0;
     border: 0;
+    height: 100%;
 }
-.image {
-    float: left;
-    opacity: 1 !important;
-    width: 150px;
-    height: 150px;
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    margin: 20px;
-
-}
-
-.image:hover {
-    width: 140px;
-    height: 140px;
-    margin: 25px;
-
-}
-
 .logo {
     float: left;
     padding: 10px 0 0 40px;
     opacity: 1 !important;
-    width: 150px;
-    height: 150px;   
+    width: 100px;
+    height: 100px;   
 }
 /*
 ===============================================
 Home Page
 ===============================================
 */
-/*#home {
-   background-color: #ccc;
-    position: absolute;
-    background-size: contain;
-    height: 100%;
-    width: 150%;
-}*/
 
 video#bgvid {
 position: fixed; right: 0; bottom: 0;
@@ -187,6 +176,22 @@ Pictures Page
     background-size: cover;
     height: 120%;
     width: 100%;
+}
+.image {
+    float: left;
+    opacity: 1 !important;
+    width: 150px;
+    height: 150px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    margin: 20px;
+
+}
+.image:hover {
+    width: 140px;
+    height: 140px;
+    margin: 25px;
+
 }
 .image-set {
 text-align: center;
