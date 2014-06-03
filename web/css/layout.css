@@ -49,8 +49,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-html, body { height: 100%; 
-}
 /* 
 ===============================================
 #Site Styles
@@ -65,43 +63,34 @@ Navigation
 ===============================================
 */
 #navigation {
-    margin-top: 0px;
     position: fixed;
     text-align: center;
     width: 100%;
-    height: 30vh;
-    top: 75%;
-    background-color: rgba(255, 255, 255, 1);
+    height: 17vh;
+    top: 83%;
+    background-color: rgba(255, 255, 255, 0.6);
     padding: 0;
     margin: 0;
     z-index: 100;
     -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-
-   
-    
 }
 #navigation ul {
     margin: 0;
-    line-height: 20vh;
+    line-height: 18vh;
 }
 #navigation ul li {
     display: inline-block;
     width: 10%;
     margin: 0;
     border: 0;
-
-
-    
 }
 #navigation ul li a {
     width: 100%;
     font-family: inherit;
     font-size: 1.5vw;
-    color: #000;
     text-decoration: none;
-    padding: 0 2% 0 2%;
-    margin: 0 0 0 0;
+    padding: 0 1% 0 1%;
     border: 0;
     display: block;    
     -webkit-transition: background-color 0.4s linear;
@@ -109,53 +98,89 @@ Navigation
     -o-transition: background-color 0.4s linear;
     -ms-transition: background-color 0.4s linear;
     transition: background-color 0.4s linear;
-    
-
+    opacity: 0.6;
 }
-
 #navigation ul #homelink a {
-
-    background-color: #938EED; 
-
+    background-color: #6899D3;
+    color: #FFF;
 }
 
 #navigation ul #homelink a:hover {
-    
-    background-color: #000000;
-    
+    background-color: #0E53A7; 
 }
 
+#navigation ul #videolink a {
+    background-color: #FC717B;
+    color: #FFF;
+}
 
+#navigation ul #videolink a:hover {
+    background-color: #F80012; 
+}
+
+#navigation ul #audiolink a {
+    background-color: #A468D5;
+    color: #FFF;
+}
+
+#navigation ul #audiolink a:hover {
+    background-color: #640CAB; 
+}
+
+#navigation ul #picslink a {
+    background-color: #FFAA73;
+    color: #FFF;
+}
+
+#navigation ul #picslink a:hover {
+    background-color: #FF6400; 
+}
+
+#navigation ul #charlink a {
+    background-color: #5ED1BA;
+    color: #FFF;
+}
+#navigation ul #charlink a:hover {
+    background-color: #00A383; 
+}
+
+#navigation ul #bazlink a {
+    background-color: #000;
+    color: #FFF;
+}
+#navigation ul #bazlink a:hover {
+    background-color: #fff;
+    color: #000
+}
 
 
 #navigation ul li a:hover {
-    color: #FFFFFF;
-    background-color: #FF0000;
     margin: 0;
     border: 0;
     height: 100%;
-
-
+    opacity: 0.9;
 }
-.image {
+.logo {
     float: left;
-    padding: 10px 0 0 40px;
+    padding: 0 0 5px 5px;
     opacity: 1 !important;
-    width: 150px;
-    height: 150px;
+    width: 20%;
+    height: 20%;   
 }
 /*
 ===============================================
 Home Page
 ===============================================
 */
-#home {
-   background-color: #ccc;
-    position: absolute;
-    background-size: contain;
-    height: 100%;
-    width: 150%;
-} 
+
+video#bgvid {
+position: fixed; right: 0; bottom: 0;
+min-width: 100%; min-height: 100%;
+width: auto; height: auto; z-index: -100;
+background: url(videobg.jpg) no-repeat;
+background-size: cover;
+}
+
 /*
 ===============================================
 Videos Page
@@ -164,7 +189,7 @@ Videos Page
 #vid {
     background-color: #000;
     position: absolute;
-    background-size: contain;
+    background-size: cover;
     height: 100%;
     width: 100%;
 } 
@@ -180,9 +205,9 @@ Audio Page
 ===============================================
 */
 #audio {
-    background-image: url(../images/bg3.jpg);
+    background-image: url(../images/backgrounds/audio.jpg);
     position: absolute;
-    background-size: contain;
+    background-size: cover;
     height: 120%;
     width: 100%;
 } 
@@ -192,18 +217,34 @@ Pictures Page
 ===============================================
 */
 #pic {
-    background-image: url(../images/bg2.jpg);
+    background-image: url(../images/backgrounds/pics.jpg);
     position: absolute;
-    background-size: contain;
+    background-size: cover;
     height: 120%;
     width: 100%;
+}
+.image {
+    float: left;
+    opacity: 1 !important;
+    width: 150px;
+    height: 150px;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    margin: 20px;
+
+}
+.image:hover {
+    width: 140px;
+    height: 140px;
+    margin: 25px;
+
 }
 .image-set {
 text-align: center;
 padding-top: 1.5%;
 }
 .content {
-max-width: 1200px;
+max-width: 650px;
 min-height: 970px;
 margin-left: auto;
 margin-right: auto;
@@ -214,12 +255,35 @@ Characters Page
 ===============================================
 */
 #characters {
-    background-image: url(../images/bg4.jpg);
+    background-image: url(../images/backgrounds/characters.jpg);
     position: absolute;
-    background-size: contain;
+    background-size: cover;
     height: 120%;
     width: 100%;
 }
+
+#charlotte {
+    
+}
+
+#box {
+  width: 500px;
+  height: 150px;
+  background-color: #363636;
+  margin-left: auto;
+  margin-right: auto;
+}
+    
+
+.char1 {
+  height: 500px;
+  width: 200px;
+  position: fixed;
+  top: -300px;
+  background-color: #363636;
+  z-index: 100;
+}
+
 /*
 ===============================================
 Barry's site
