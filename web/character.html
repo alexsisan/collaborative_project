@@ -38,37 +38,41 @@
     <!--JQUERY for making the main section disappear when a character badge is hovered over, doesnt seem to be working atm; see git log for details-->
     
    <script>
-    $(document).ready(function(){
-    //if you're stuck on something go to api.jquery.com and search what you want to do, chances are you'll find something
-  
-  
-    //store the selecters in variables that way you've got them once then. it's more effcient
-    var char = $('.char1');
-    var main = $('#box');
-  
-    //you don't have to use on, you could just use .mouseenter() and .mouseleave()
-    char.on('mouseenter',function(){
-      main.css('border','1px solid red');
-    });
-  
-  char.on('mouseleave',function(){
-     main.css('border','none');
+$(document).ready(function(){
+  $(".char1").mouseenter(function(){
+    $("#box").animate({
+    opacity:"0"
+    },200);
+  });
+  $(".char1").mouseleave(function(){
+    $("#box").animate({
+    opacity:"1", 
+    },200);
   });
 });
-       </script>
+</script>
+       
     
         <div id="characters">
             
-            <div class="char1">
-                text
+            <div id="wrapper">
+            
+            <div id="barry" class="char1">
+                <h1>BARRY "BAZ" STEAD</h1>
+                <p>The Bazstead, the pundit, the main perpetrator</p>
+                <img src="images/thumbs/barry_badge.png" id="barrybadge">
             </div>
             
-            <div id="charlotte">
+            <div id="charlotte" class="char1">
+                <img src="images/thumbs/char_badge.png" id="charlottebadge">
             </div>
+                
+                <div id="box">
+                <h6>Something rather hilarious, or maybe even useful could go in this box.</h6>
+            </div>
+                
+                </div>
             
-            <div id="box">
-                text
-            </div>
             
         </div>
     <nav id="navigation">

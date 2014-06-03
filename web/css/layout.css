@@ -287,7 +287,6 @@ Pictures Page
     width: 100%;
 }
 .image {
-    float: left;
     opacity: 1 !important;
     width: 150px;
     height: 150px;
@@ -322,38 +321,87 @@ Characters Page
     background-image: url(../images/backgrounds/characters.jpg);
     position: absolute;
     background-size: cover;
-    height: 120%;
+    height: 100%;
     width: 100%;
 }
 
+#wrapper {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #charlotte {
-    
+    transition-duration: 0.2s;
+    margin-left: 20px;
+    float: right;
+    position: relative;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+img#charlottebadge {
+    display: block;
+    margin-top: 118%;
+    position: absolute;
+    bottom: 35px;
+    left: 160px;
+}
+
+#charlotte:hover {
+    top: 0px;
+    transition-duration: 0.2s;
+}
+
+#barry {
+    transition-duration: 0.2s;
+    margin-left: auto;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+img#barrybadge {
+    display: block;
+    margin-top: 118%;
+    position: absolute;
+    bottom: 35px;
+    left: 160px;
+}
+
+#barry:hover {
+    top: 0px;
+    transition-duration: 0.2s;
 }
 
 #box {
-  width: 500px;
-  height: 150px;
-  background-color: #363636;
+  width: 800px;
+  height: 300px;
+  position: absolute;
+  margin-top: 35vh;
   margin-left: auto;
   margin-right: auto;
+  padding: 20px;
 }
-    
+ 
+h6 {
+ font-size:8vh;
+  text-align:center;
+  color: white;
+  text-shadow: 2px 2px #000;
+}
+
+h1 {
+    font-size: 40px;
+}
 
 .char1 {
-  height: 500px;
-  width: 200px;
+  height: 600px;
+  width: 400px;
   position: fixed;
-  top: -300px;
-  background-color: #363636;
-  z-index: 100;
-}
-.char1:hover {
-  height: 500px;
-  width: 200px;
-  position: fixed;
-  top: 0px;
-  background-color: #363636;
-  z-index: 100;
+  top: -450px;
+  padding: 10px;
 }
 
 
