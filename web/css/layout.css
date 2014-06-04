@@ -412,11 +412,27 @@ Barry's site
 */
 #baz{
     display: block;
-    float: left;
+    float: middle;
     padding: 50px;
     margin: 50px;
     background-color: red;
     
+}
+
+baztitle {
+    font-size: 72pt;
+    font-family: cursive;
+    color: yellow;
+    
+}
+
+a.twitterlink {
+    font-size: 20pt;
+    color: 
+}
+
+a.twitterlink:hover{
+    font-size: 60pt;
 }
 /* 
 ==================================================
@@ -434,10 +450,175 @@ Barry's site
 	@media only screen and (max-width: 767px) {}
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+    }
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {}
+	@media only screen and (max-width: 479px) {
+/*
+==================
+Mobile Navigation
+==================
+*/
+
+        .logo{
+            display: none;
+    }
+        #navigation {
+            top: 75%;
+            height: 100%;
+}
+        #navigation ul {
+            line-height: 5vh;
+}
+        #navigation ul li {
+            display:list-item;
+            width: 100%;
+}
+        #navigation ul li a {
+            
+            width: 100%;
+            font-size: 5vw;
+}
+#navigation ul #homelink a{
+   
+    border-bottom: 1px #6899D3; 
+}
+
+#navigation ul #videolink a{
+     background-color: #ccc;
+    border-bottom: 1px #FC717B; 
+}
+
+#navigation ul #picslink a{
+    border-bottom: 1px#FFAA73;
+
+}
+#navigation ul #charlink a{
+     background-color: #ccc;
+    border-bottom: 1px #5ED1BA; 
+}
+#navigation ul #bazlink a {
+   
+    border-bottom: 1px #000;
+}
+        
+/*
+==================
+Mobile Home
+==================
+*/
+        video#bgvid {
+            display: none;
+}
+        #home{
+            margin-top: 80px;
+            width: 100%;
+            height: 479px;
+            background-size: contain ;
+            background-image: url(../images/mob.png);
+        }
+/*
+==================
+Mobile Videos
+==================
+*/
+#container{
+    height: 75%;
+}
+#vidtop ul li a {
+    font-size: 3vw;
+}
+#vidtop ul{
+    line-height: 5.5vh;
+}
+        #vidtop{
+            z-index: 110;
+            top: 0;
+        }
+        #arrow{
+            display: none;
+        }
+        #vidtop ul .navtop a {
+            color: #958f8f;
+}
+/*
+==================
+Mobile Characters
+==================
+*/
+        #barry{
+            width: 100%;
+            height: 150px;
+            display: block;
+            transition-duration: none;
+        }
+        #charlotte{
+            top: 200px;
+            width: 100%;
+            height: 150px;
+            display: block;
+            transition-duration: none;
+        }
+        #charlotte:hover{
+            display: none;
+            transition-duration: none;
+        }
+        #barry:hover{
+            display: none;
+            transition-duration: none;
+        }
+        img#barrybadge {
+    left: 210px;
+}
+        img#charlottebadge {
+    left: 220px;
+}
+#wrapper {
+    width: 100%;
+}
+#box{
+    display: none;
+}
+        .char1 {
+  top: 0px;
+            padding:10px 0 10px 10px;
+}
+        h1 {
+    font-size: 15px;
+}
+        p{
+            font-size: 10px;
+        }
+/*
+==================
+Mobile pictures
+==================
+*/
+        #pic {
+    
+            background-repeat: repeat;
+    height: 100%;
+    width: 100%;
+}
+.image {
+    width: 60px;
+    height: 60px;
+
+}
+.image:hover {
+    width: 55px;
+    height: 55px;
+    margin: 22px;
+
+}
+.content {
+max-width: 479px;
+min-height: 100%;
+}
+    
+    }
+
 
 
 /* 
